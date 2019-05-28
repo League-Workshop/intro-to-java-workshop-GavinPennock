@@ -9,6 +9,19 @@ import org.jointheleague.graphical.robot.Robot;
 public class PentagonCrazy {
 
 	private void makePrettyThings() {
+		
+
+		Robot bobby = new Robot();
+bobby.penDown();
+				bobby.setSpeed(100);
+				bobby.setRandomPenColor();
+			int side = 5 ;
+			int angle = 360/side ;
+			for(int i=0; i<200; i++) {
+			bobby.move(i);
+			bobby.turn(angle);
+			bobby.turn(1);
+			}
 		// 1. Create a new Robot
 
 		// 3. Put the robot's pen down
@@ -40,5 +53,8 @@ public class PentagonCrazy {
 
 	public static void main(String[] args) {
 		new PentagonCrazy().makePrettyThings();
+		
+	
+		}
 	}
-}
+

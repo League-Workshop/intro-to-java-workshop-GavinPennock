@@ -20,6 +20,13 @@ public class Spiral {
 			// 2. Turn the robot 360/7 degrees to the right
 		
 			// 8. Set the pen width to i
-			
+	Robot bobby = new Robot();
+	bobby.penDown();
+	bobby.setSpeed(100);
+	for(int i=0; i<75;i++) {
+	bobby.move(5*i);
+	bobby.turn(360/7);
+	bobby.setPenWidth(i);
+	}
 	}
 }

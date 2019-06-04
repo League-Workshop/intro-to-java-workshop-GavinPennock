@@ -17,6 +17,24 @@ public class SpeakAndSpell {
 		// 4. Otherwise say "wrong"
 
 		// 5. repeat the process for other words
+	
+		
+		speak ("spell pneumonoultramicroscopicsilicovolcanoconiosis" );
+		String bobby = 
+				JOptionPane.showInputDialog(null, "write below" );
+		if(bobby.equals("pneumonoultramicroscopicsilicovolcanoconiosis") ) {
+			speak("you know lots of useless things");
+		}
+		else {
+			speak("you do not know random things");
+		}
+				
+				
+		
+		
+		
+		
+		
 		
 	}
 

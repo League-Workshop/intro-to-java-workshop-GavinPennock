@@ -26,8 +26,25 @@ public class MadlibsOfTheAmazon {
 		// back to the [place]. Good luck!
 		
 		// Make a pop-up for the final story. You can use \n to go to the next line
-		
+		JOptionPane.showMessageDialog(null, "here is a mad lib" );	
+		String bobby =
+				JOptionPane.showInputDialog(null, "put in an insulting name" );
+String joey =
+JOptionPane.showInputDialog(null, "put in a body part" );
+String tommy =
+JOptionPane.showInputDialog(null, "put in a verb ending in -ed" );
+speak( "i got mad at you so i called you an "+bobby+" . then i punched you in the "+joey+". after i did that you "+tommy+" away crying" );
 
 	}
+
+
+static void speak(String words) {
+	try {
+		Runtime.getRuntime().exec("say " + words).waitFor();
+	}
+	 catch (Exception e) {
+		 e.printStackTrace();
+	 }
 }
 
+}

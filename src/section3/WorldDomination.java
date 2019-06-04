@@ -10,6 +10,19 @@ public class WorldDomination {
 		// 2. If they say "yes", tell them they will rule the world.
 
 		// 3. Otherwise, wish them good luck washing dishes.
+		String bobby = 
+		JOptionPane.showInputDialog(null, "do you know java");
+		if(bobby.contentEquals("yes" )) {
+			JOptionPane.showMessageDialog(null,"you are awesome" );
+		}
+	if(bobby.contentEquals("I am Gavin Pennock")) {
+		JOptionPane.showMessageDialog(null, "hello your honor" );
+	}
+	
+		if(bobby.contentEquals("no")) {
+			JOptionPane.showMessageDialog(null, "good luck washing dishes" );
+		}
+		
 
 	}
 }

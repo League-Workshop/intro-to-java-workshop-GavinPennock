@@ -2,6 +2,8 @@ package section4;
 
 import java.util.Random;
 
+import javax.swing.JOptionPane;
+
 public class AwesomeOrNot {
 
 	// 1. Make a main method that includes all the steps below…
@@ -27,7 +29,28 @@ public class AwesomeOrNot {
 	// 8. If the random number is 3
 
 	// -- write your own answer
-
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		int a = new Random().nextInt(4);
+		System.out.println(a);
+		String bob=JOptionPane.showInputDialog(null, "what do you think is awesome?");
+		if(a == 0) {
+			JOptionPane.showMessageDialog(null, bob+" is awesome!" );
+		}
+		if(a == 1){
+			JOptionPane.showMessageDialog(null, bob+" is booooooorrrriiiinnngggg!" );
+		}
+		if(a == 2){
+			JOptionPane.showMessageDialog(null, bob+" is ok :[" );
+		}
+		if(a == 3) {
+			JOptionPane.showMessageDialog(null, "loser" );
+	}
+}
 }
 
 

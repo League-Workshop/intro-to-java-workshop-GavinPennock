@@ -21,10 +21,13 @@ public static void main(String[] args) {
 		String bobby =
 JOptionPane.showInputDialog(null, "write below" );
 		speak(bobby);
+		
+		
 }
+	speak("would you stop typing scentences? they are soooooooooo boring!");
 }	
 	
-	
+    
 	
 	
 	

@@ -21,9 +21,27 @@ public class WorldDomination {
 	
 		if(bobby.contentEquals("no")) {
 			JOptionPane.showMessageDialog(null, "good luck washing dishes" );
+			
 		}
 		
+		else {
+			speak("please leave because i am an amazing piece of technology and you are just a dumb human");
+		}
+			
+			
+		}
+		
+		static void speak(String words) {
+			try {
+				Runtime.getRuntime().exec("say " + words).waitFor();
+			}
+			 catch (Exception e) {
+				 e.printStackTrace();
+	}
+
+}
 
 	}
-}
+
+
 
